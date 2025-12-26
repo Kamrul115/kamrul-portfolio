@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamrul Hassan | Data & Systems Engineer</title>
+    <title>Kamrul Hassan | AI Engineer & XR Developer</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <canvas id="canvas-bg"></canvas>
+
     <nav id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">Kamrul<span>.</span></a>
+            <a href="#" class="logo">Kamrul<span class="dot">.</span>_Dev</a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact" class="btn-primary">Contact Me</a></li>
+                <li><a href="#about">About & Exp</a></li>
+                <li><a href="#featured">XR & Research</a></li>
+                <li><a href="#projects">Dev Projects</a></li>
+                <li><a href="#contact" class="btn-glow">Contact</a></li>
             </ul>
             <div class="menu-toggle"><i class="fas fa-bars"></i></div>
         </div>
@@ -28,17 +30,32 @@
     <section class="hero">
         <div class="container hero-container">
             <div class="hero-content" data-aos="fade-right">
-                <span class="subtitle">System Operations & Data Analytics</span>
-                <h1>Turning Data into Insights <br> & Systems into <span class="highlight">Solutions</span></h1>
-                <p>Hi, I'm <strong>Kamrul Hassan</strong>. A Computer Science researcher and IT specialist bridging the gap between Advanced AI Analytics and Secure System Operations.</p>
+                <div class="badge">🚀 Internship Completed: Batterylow Interactive</div>
+                <h1>Building the Future with <br> <span class="highlight" id="typing-text"></span></h1>
+                <p>I bridge the gap between <strong>Advanced AI Research</strong> and <strong>Immersive XR Experiences</strong>. From unbricking Android kernels to training Transformers for fake news detection.</p>
+                
                 <div class="hero-btns">
-                    <a href="#projects" class="btn-primary">View Work</a>
-                    <a href="https://github.com/kamrul115" target="_blank" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#featured" class="btn-primary">View Latest Work</a>
+                    <a href="https://github.com" target="_blank" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+                
+                <div class="tech-icons">
+                    <i class="fab fa-unity" title="Unity 3D"></i>
+                    <i class="fab fa-python" title="Python"></i>
+                    <i class="fas fa-microchip" title="System Ops"></i>
+                    <i class="fas fa-brain" title="Machine Learning"></i>
                 </div>
             </div>
-            <div class="hero-img" data-aos="fade-left">
-                <div class="img-wrapper">
-                    <img src="assets/profile.jpg" alt="Kamrul Hassan" onerror="this.src='https://via.placeholder.com/400x400/0f172a/38bdf8?text=Kamrul+Hassan'">
+            
+            <div class="hero-img" data-aos="zoom-in">
+                <div class="glass-card-profile" data-tilt>
+                    <img src="assets/profile1.jpg" alt="Kamrul Hassan" class="profile-pic">
+                    <div class="floating-badge top-right">
+                        <i class="fas fa-vr-cardboard"></i> XR Developer
+                    </div>
+                    <div class="floating-badge bottom-left">
+                        <i class="fas fa-shield-alt"></i> Cyber Security
+                    </div>
                 </div>
             </div>
         </div>
@@ -46,185 +63,213 @@
 
     <section id="about" class="section-padding">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">My Journey</span>
+                <h2>Experience & Education</h2>
+            </div>
+
             <div class="about-grid">
-                <div class="about-text" data-aos="fade-right">
-                    <p>I am a final-year Computer Science student at Green University of Bangladesh with a passion for extracting insights from complex data and maintaining secure IT infrastructures.</p>
-                    <p>My expertise is hybrid: I build Explainable AI models using tools like PyTorch and SHAP, while simultaneously possessing the engineering skills to manage Linux environments, troubleshoot hardware, and secure networks using AES encryption.</p>
+                <div class="bio-card" data-aos="fade-right">
+                    <h3>Computer Science Researcher</h3>
+                    <p>Final year student at Green University of Bangladesh. I specialize in multimodal Machine Learning and System Operations. My passion lies in solving complex problems—whether that's analyzing misinformation spread or developing immersive AR environments.</p>
+                    
+                    <div class="stats-row">
+                        <div class="stat">
+                            <span class="number">3.50</span>
+                            <span class="label">CGPA</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">5+</span>
+                            <span class="label">Major Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">2025</span>
+                            <span class="label">Grad Year</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="stats-grid" data-aos="fade-left">
-                    <div class="stat-card">
-                        <h3>3.50</h3>
-                        <p>CGPA</p>
+
+                <div class="timeline" data-aos="fade-left">
+                    
+                    <div class="timeline-item active">
+                        <div class="time-date">Nov 2025 - Dec 2025</div>
+                        <h3>AR/VR/XR Developer Intern</h3>
+                        <h4>Batterylow Interactive</h4>
+                        <p>Worked on cutting-edge AI & Machine Learning integration within Augmented and Virtual Reality environments. Developed immersive interactive modules.</p>
                     </div>
-                    <div class="stat-card">
-                        <h3>5+</h3>
-                        <p>Major Projects</p>
+
+                    <div class="timeline-item">
+                        <div class="time-date">2025 - Present</div>
+                        <h3>Undergraduate Researcher</h3>
+                        <h4>Green University of Bangladesh</h4>
+                        <p>Thesis: "Analyzing the fake news spreads using machine learning". Supervised by Prof. Dr. Md. Saiful Azad (Dean, FSE).</p>
                     </div>
-                    <div class="stat-card">
-                        <h3>BS</h3>
-                        <p>CompSci (Final Yr)</p>
+
+                    <div class="timeline-item">
+                        <div class="time-date">2022 - Present</div>
+                        <h3>B.Sc. in Computer Science</h3>
+                        <h4>Green University of Bangladesh</h4>
+                        <p>Focus on Data Science, Network Security, and System Operations.</p>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="section-padding bg-dark">
+    <section id="featured" class="section-padding bg-darker">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Technical Arsenal</h2>
-            <div class="skills-wrapper">
-                
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                    <h3><i class="fas fa-brain"></i> Data & AI</h3>
-                    <div class="tags">
-                        <span>Python</span>
-                        <span>PyTorch</span>
-                        <span>Scikit-learn</span>
-                        <span>Pandas/NumPy</span>
-                        <span>SQL</span>
-                        <span>Power BI</span>
-                        <span>XGBoost</span>
-                        <span>SHAP/LIME</span>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Top Priority Work</span>
+                <h2>Featured Innovations</h2>
+            </div>
+
+            <div class="ar-grid">
+                <div class="ar-card large-card" data-aos="fade-up" data-tilt>
+                    <div class="ar-content">
+                        <div class="badge-sm">Research Thesis</div>
+                        <h3>Fake News Detection AI</h3>
+                        <p>A multimodal framework achieving ~95% accuracy. Integrates text (DistilBERT), image (DINO-VIT), and behavioral graphs to analyze misinformation spread across diverse contexts.</p>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>PyTorch</li>
+                            <li>NetworkX</li>
+                            <li>Transformers</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <h3><i class="fas fa-server"></i> Systems & Ops</h3>
-                    <div class="tags">
-                        <span>Linux Administration</span>
-                        <span>Bash Scripting</span>
-                        <span>Windows Server</span>
-                        <span>Networking (DNS/IP)</span>
-                        <span>AES Encryption</span>
-                        <span>Cloud (AWS Basics)</span>
+                <div class="ar-card" data-aos="fade-up" data-delay="100" data-tilt>
+                    <div class="ar-content">
+                        <div class="ar-icon"><i class="fas fa-cube"></i></div>
+                        <h3>AR Alphabet Learning</h3>
+                        <p>Interactive Unity app. Users scan cards to spawn 3D models (e.g., 'A' for Apple) with animations.</p>
+                        <ul class="tags">
+                            <li>Unity 3D</li>
+                            <li>Vuforia</li>
+                            <li>C#</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                    <h3><i class="fas fa-code"></i> Web & Tools</h3>
-                    <div class="tags">
-                        <span>Java</span>
-                        <span>Django</span>
-                        <span>HTML/CSS</span>
-                        <span>Git/GitHub</span>
-                        <span>MySQL</span>
-                        <span>Docker</span>
+                <div class="ar-card" data-aos="fade-up" data-delay="200" data-tilt>
+                    <div class="ar-content">
+                        <div class="ar-icon"><i class="fas fa-vr-cardboard"></i></div>
+                        <h3>VR Environment Sim</h3>
+                        <p>Immersive VR simulation developed during my internship at Batterylow Interactive.</p>
+                        <ul class="tags">
+                            <li>XR Interaction</li>
+                            <li>Oculus/Meta</li>
+                            <li>AI Agents</li>
+                        </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <section id="projects" class="section-padding">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Featured Research & Dev</h2>
-            <div class="projects-grid">
-
-                <div class="project-card" data-aos="fade-up">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <i class="fas fa-newspaper"></i>
-                            <h3>Fake News Detection AI</h3>
-                        </div>
-                        <p>A multimodal AI model achieving ~95% accuracy. Integrated text (DistilBERT), image (DINO-VIT), and behavioral graphs to analyze misinformation spread.</p>
-                        <ul class="tech-stack">
-                            <li>Python</li>
-                            <li>PyTorch</li>
-                            <li>Transformers</li>
-                            <li>NetworkX</li>
-                        </ul>
-                        
-                    </div>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Software Engineering</span>
+                <h2>Development Projects</h2>
+            </div>
+            
+            <div class="bento-grid">
+                
+                <div class="bento-item" data-aos="fade-up">
+                    <div class="icon-box"><i class="fas fa-notes-medical"></i></div>
+                    <h3>Medilink System</h3>
+                    <p>Full-stack platform for doctor appointments, prescriptions, and medicine delivery.</p>
+                    <div class="tech-mini">MySQL &bull; PHP/Java &bull; Web</div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <i class="fas fa-notes-medical"></i>
-                            <h3>Explainable ASD Prediction</h3>
-                        </div>
-                        <p>Designed an ensemble framework (SVM, RF, XGBoost) for autism diagnosis. Utilized SHAP & LIME for model interpretability and fairness.</p>
-                        <ul class="tech-stack">
-                            <li>Scikit-Learn</li>
-                            <li>XGBoost</li>
-                            <li>Medical AI</li>
-                        </ul>
-                        
-                    </div>
+                <div class="bento-item" data-aos="fade-up" data-delay="100">
+                    <div class="icon-box"><i class="fas fa-lock"></i></div>
+                    <h3>Secure Cloud Storage</h3>
+                    <p>Client-server file sharing using Java Sockets and AES-128 Encryption.</p>
+                    <div class="tech-mini">Java &bull; Cryptography &bull; Sockets</div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <i class="fas fa-shield-alt"></i>
-                            <h3>Secure Cloud Storage</h3>
-                        </div>
-                        <p>A secure client-server file sharing platform. Implemented Java Sockets and AES Encryption for secure file transfer and user authentication.</p>
-                        <ul class="tech-stack">
-                            <li>Java</li>
-                            <li>AES Cryptography</li>
-                            <li>Socket Prog</li>
-                        </ul>
-                        
-                    </div>
+                <div class="bento-item" data-aos="fade-up" data-delay="200">
+                    <div class="icon-box"><i class="fas fa-brain"></i></div>
+                    <h3>Explainable ASD AI</h3>
+                    <p>Autism prediction using Ensemble Learning (SVM, RF, XGBoost) with SHAP explainability.</p>
+                    <div class="tech-mini">Scikit-learn &bull; LIME &bull; Python</div>
                 </div>
 
-                 <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <i class="fas fa-truck-medical"></i>
-                            <h3>Medilink System</h3>
-                        </div>
-                        <p>Complete platform for online doctor appointments, prescription management, and medicine delivery with complex backend logic.</p>
-                        <ul class="tech-stack">
-                            <li>Database Design</li>
-                            <li>Backend Logic</li>
-                            <li>System Analysis</li>
-                        </ul>
-                        
-                    </div>
+                <div class="bento-item" data-aos="fade-up" data-delay="300">
+                    <div class="icon-box"><i class="fab fa-android"></i></div>
+                    <h3>Android & Systems</h3>
+                    <p>Experience unbricking MediaTek devices (SP Flash Tool) and configuring Kali Linux VMs.</p>
+                    <div class="tech-mini">Linux &bull; Firmware &bull; VM</div>
+                </div>
+
+                <div class="bento-item" data-aos="fade-up" data-delay="400">
+                    <div class="icon-box"><i class="fas fa-gamepad"></i></div>
+                    <h3>Nim Game AI</h3>
+                    <p>Reinforcement Learning agent (Q-Learning) that adapts strategy to beat humans.</p>
+                    <div class="tech-mini">Python &bull; RL &bull; Algorithms</div>
+                </div>
+
+                 <div class="bento-item" data-aos="fade-up" data-delay="500">
+                    <div class="icon-box"><i class="fas fa-certificate"></i></div>
+                    <h3>Certifications</h3>
+                    <p>Govt. Training in Django (Excellent Score) & Google Digital Marketing.</p>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section-padding bg-dark">
-        <div class="container contact-wrapper">
-                <div class="contact-content" data-aos="fade-right">
+    <section id="skills" class="section-padding bg-darker">
+        <div class="container">
+            <h3 class="text-center mb-4">Technical Arsenal</h3>
+            <div class="skills-scroller">
+                <div class="skill-pill">Unity & AR/VR</div>
+                <div class="skill-pill">Python & PyTorch</div>
+                <div class="skill-pill">Computer Vision</div>
+                <div class="skill-pill">Java & OOP</div>
+                <div class="skill-pill">Kali Linux</div>
+                <div class="skill-pill">Android Debugging</div>
+                <div class="skill-pill">SQL & Database</div>
+                <div class="skill-pill">AES Encryption</div>
+                <div class="skill-pill">Django</div>
+                <div class="skill-pill">Git & GitHub</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="glass-form" data-aos="zoom-in">
                 <h2>Let's Collaborate</h2>
-                <p>I am currently looking for opportunities as an IT Intern or Data Analyst. I am eager to learn and adapt in a professional environment.</p>
-                
-                <div class="contact-details">
-                    <div class="detail-item">
+                <p>Ready to join your team as an AI Engineer or XR Developer.</p>
+                <div class="contact-methods">
+                    <a href="mailto:realjibonll@gmail.com" class="contact-box">
                         <i class="fas fa-envelope"></i>
                         <span>realjibonll@gmail.com</span>
-                    </div>
-                    <div class="detail-item">
+                    </a>
+                    <a href="tel:+8801872124017" class="contact-box">
                         <i class="fas fa-phone"></i>
                         <span>+880 187 212 4017</span>
-                    </div>
-                    <div class="detail-item">
+                    </a>
+                    <a href="#" class="contact-box">
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Kuril-DCC, Dhaka</span>
-                    </div>
-                </div>
-                
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/kamrul-hassan-9b4821231/" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/kamrul115" class="social-btn"><i class="fab fa-github"></i></a>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Kamrul Hassan. Built with modern web standards.</p>
+        <p>&copy; 2025 Kamrul Hassan. <br>Built with Cyber-Glass UI.</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
