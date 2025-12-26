@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamrul Hassan | AI Engineer & XR Developer</title>
+    <title>Kamrul Hassan | XR Developer & AI Researcher</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <canvas id="canvas-bg"></canvas>
+    <div class="grid-bg"></div>
 
     <nav id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">Kamrul<span class="dot">.</span>_Dev</a>
+            <a href="#" class="logo">Kamrul<span>.</span>Dev</a>
             <ul class="nav-links">
-                <li><a href="#about">About & Exp</a></li>
-                <li><a href="#featured">XR & Research</a></li>
-                <li><a href="#projects">Dev Projects</a></li>
-                <li><a href="#contact" class="btn-glow">Contact</a></li>
+                <li><a href="#about">Profile</a></li>
+                <li><a href="#research">Research Lab</a></li>
+                <li><a href="#xr">AR/VR/XR</a></li>
+                <li><a href="#engineering">Engineering</a></li>
+                <li><a href="#contact" class="btn-primary">Contact</a></li>
             </ul>
             <div class="menu-toggle"><i class="fas fa-bars"></i></div>
         </div>
@@ -30,31 +31,46 @@
     <section class="hero">
         <div class="container hero-container">
             <div class="hero-content" data-aos="fade-right">
-                <div class="badge">🚀 Internship Completed: Batterylow Interactive</div>
-                <h1>Building the Future with <br> <span class="highlight" id="typing-text"></span></h1>
-                <p>I bridge the gap between <strong>Advanced AI Research</strong> and <strong>Immersive XR Experiences</strong>. From unbricking Android kernels to training Transformers for fake news detection.</p>
-                
-                <div class="hero-btns">
-                    <a href="#featured" class="btn-primary">View Latest Work</a>
-                    <a href="https://github.com" target="_blank" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                <div class="status-badge">
+                    <span class="pulse"></span> 
+                    Recently Completed Internship at Batterylow Interactive
                 </div>
+                <h1>Architecting Intelligence <br> in <span class="highlight">Virtual Realities</span></h1>
+                <p class="hero-desc">
+                    I am <strong>Kamrul Hassan</strong>, a Computer Science Researcher and XR Developer. 
+                    I bridge the gap between <strong>Advanced Machine Learning</strong> (Explainable AI, Transformers) and <strong>Immersive Technologies</strong> (Unity AR/VR).
+                    Currently focusing on Multi-modal Fake News Detection and Early ASD Diagnosis.
+                </p>
                 
-                <div class="tech-icons">
-                    <i class="fab fa-unity" title="Unity 3D"></i>
-                    <i class="fab fa-python" title="Python"></i>
-                    <i class="fas fa-microchip" title="System Ops"></i>
-                    <i class="fas fa-brain" title="Machine Learning"></i>
+                <div class="hero-stats">
+                    <div class="h-stat">
+                        <span class="num">3.50</span>
+                        <span class="txt">CGPA (Target)</span>
+                    </div>
+                    <div class="h-stat">
+                        <span class="num">2+</span>
+                        <span class="txt">Years Research</span>
+                    </div>
+                    <div class="h-stat">
+                        <span class="num">10+</span>
+                        <span class="txt">Projects</span>
+                    </div>
+                </div>
+
+                <div class="hero-btns">
+                    <a href="#research" class="btn-primary">View Research</a>
+                    <a href="https://github.com" target="_blank" class="btn-secondary"><i class="fab fa-github"></i> GitHub Profile</a>
                 </div>
             </div>
             
             <div class="hero-img" data-aos="zoom-in">
-                <div class="glass-card-profile" data-tilt>
-                    <img src="assets/profile1.jpg" alt="Kamrul Hassan" class="profile-pic">
-                    <div class="floating-badge top-right">
-                        <i class="fas fa-vr-cardboard"></i> XR Developer
+                <div class="img-frame">
+                    <img src="assets/profile1.jpg" alt="Kamrul Hassan" onerror="this.src='assets/profile.jpg'">
+                    <div class="floating-card top">
+                        <i class="fas fa-vr-cardboard"></i> XR Dev
                     </div>
-                    <div class="floating-badge bottom-left">
-                        <i class="fas fa-shield-alt"></i> Cyber Security
+                    <div class="floating-card bottom">
+                        <i class="fas fa-brain"></i> AI Research
                     </div>
                 </div>
             </div>
@@ -63,213 +79,227 @@
 
     <section id="about" class="section-padding">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">My Journey</span>
-                <h2>Experience & Education</h2>
-            </div>
-
-            <div class="about-grid">
-                <div class="bio-card" data-aos="fade-right">
-                    <h3>Computer Science Researcher</h3>
-                    <p>Final year student at Green University of Bangladesh. I specialize in multimodal Machine Learning and System Operations. My passion lies in solving complex problems—whether that's analyzing misinformation spread or developing immersive AR environments.</p>
-                    
-                    <div class="stats-row">
-                        <div class="stat">
-                            <span class="number">3.50</span>
-                            <span class="label">CGPA</span>
-                        </div>
-                        <div class="stat">
-                            <span class="number">5+</span>
-                            <span class="label">Major Projects</span>
-                        </div>
-                        <div class="stat">
-                            <span class="number">2025</span>
-                            <span class="label">Grad Year</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline" data-aos="fade-left">
-                    
-                    <div class="timeline-item active">
-                        <div class="time-date">Nov 2025 - Dec 2025</div>
-                        <h3>AR/VR/XR Developer Intern</h3>
-                        <h4>Batterylow Interactive</h4>
-                        <p>Worked on cutting-edge AI & Machine Learning integration within Augmented and Virtual Reality environments. Developed immersive interactive modules.</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="time-date">2025 - Present</div>
-                        <h3>Undergraduate Researcher</h3>
-                        <h4>Green University of Bangladesh</h4>
-                        <p>Thesis: "Analyzing the fake news spreads using machine learning". Supervised by Prof. Dr. Md. Saiful Azad (Dean, FSE).</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="time-date">2022 - Present</div>
-                        <h3>B.Sc. in Computer Science</h3>
-                        <h4>Green University of Bangladesh</h4>
-                        <p>Focus on Data Science, Network Security, and System Operations.</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="featured" class="section-padding bg-darker">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Top Priority Work</span>
-                <h2>Featured Innovations</h2>
-            </div>
-
-            <div class="ar-grid">
-                <div class="ar-card large-card" data-aos="fade-up" data-tilt>
-                    <div class="ar-content">
-                        <div class="badge-sm">Research Thesis</div>
-                        <h3>Fake News Detection AI</h3>
-                        <p>A multimodal framework achieving ~95% accuracy. Integrates text (DistilBERT), image (DINO-VIT), and behavioral graphs to analyze misinformation spread across diverse contexts.</p>
-                        <ul class="tags">
-                            <li>Python</li>
-                            <li>PyTorch</li>
-                            <li>NetworkX</li>
-                            <li>Transformers</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="ar-card" data-aos="fade-up" data-delay="100" data-tilt>
-                    <div class="ar-content">
-                        <div class="ar-icon"><i class="fas fa-cube"></i></div>
-                        <h3>AR Alphabet Learning</h3>
-                        <p>Interactive Unity app. Users scan cards to spawn 3D models (e.g., 'A' for Apple) with animations.</p>
-                        <ul class="tags">
-                            <li>Unity 3D</li>
-                            <li>Vuforia</li>
-                            <li>C#</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="ar-card" data-aos="fade-up" data-delay="200" data-tilt>
-                    <div class="ar-content">
-                        <div class="ar-icon"><i class="fas fa-vr-cardboard"></i></div>
-                        <h3>VR Environment Sim</h3>
-                        <p>Immersive VR simulation developed during my internship at Batterylow Interactive.</p>
-                        <ul class="tags">
-                            <li>XR Interaction</li>
-                            <li>Oculus/Meta</li>
-                            <li>AI Agents</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section-padding">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Software Engineering</span>
-                <h2>Development Projects</h2>
-            </div>
+            <h2 class="section-heading" data-aos="fade-up">Professional Journey</h2>
             
-            <div class="bento-grid">
+            <div class="timeline">
                 
-                <div class="bento-item" data-aos="fade-up">
-                    <div class="icon-box"><i class="fas fa-notes-medical"></i></div>
-                    <h3>Medilink System</h3>
-                    <p>Full-stack platform for doctor appointments, prescriptions, and medicine delivery.</p>
-                    <div class="tech-mini">MySQL &bull; PHP/Java &bull; Web</div>
+                <div class="timeline-row" data-aos="fade-up">
+                    <div class="timeline-time">Nov 2025 - Dec 2025</div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <h3>AR/VR/XR Developer Intern</h3>
+                            <span class="company">Batterylow Interactive</span>
+                        </div>
+                        <p class="role-desc">Specialized in developing immersive modules for next-generation interactive applications.</p>
+                        <ul class="job-details">
+                            <li><i class="fas fa-check"></i> Engineered interactive 3D environments using <strong>Unity & C#</strong>.</li>
+                            <li><i class="fas fa-check"></i> Integrated AI/ML models within XR environments for dynamic user interaction.</li>
+                            <li><i class="fas fa-check"></i> Optimized rendering pipelines for standalone VR headsets (Oculus/Meta).</li>
+                            <li><i class="fas fa-check"></i> Collaborated with the creative team to translate concepts into spatial computing reality.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Unity 3D</span><span>C#</span><span>XR Interaction Toolkit</span><span>AI Integration</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="bento-item" data-aos="fade-up" data-delay="100">
-                    <div class="icon-box"><i class="fas fa-lock"></i></div>
-                    <h3>Secure Cloud Storage</h3>
-                    <p>Client-server file sharing using Java Sockets and AES-128 Encryption.</p>
-                    <div class="tech-mini">Java &bull; Cryptography &bull; Sockets</div>
-                </div>
-
-                <div class="bento-item" data-aos="fade-up" data-delay="200">
-                    <div class="icon-box"><i class="fas fa-brain"></i></div>
-                    <h3>Explainable ASD AI</h3>
-                    <p>Autism prediction using Ensemble Learning (SVM, RF, XGBoost) with SHAP explainability.</p>
-                    <div class="tech-mini">Scikit-learn &bull; LIME &bull; Python</div>
-                </div>
-
-                <div class="bento-item" data-aos="fade-up" data-delay="300">
-                    <div class="icon-box"><i class="fab fa-android"></i></div>
-                    <h3>Android & Systems</h3>
-                    <p>Experience unbricking MediaTek devices (SP Flash Tool) and configuring Kali Linux VMs.</p>
-                    <div class="tech-mini">Linux &bull; Firmware &bull; VM</div>
-                </div>
-
-                <div class="bento-item" data-aos="fade-up" data-delay="400">
-                    <div class="icon-box"><i class="fas fa-gamepad"></i></div>
-                    <h3>Nim Game AI</h3>
-                    <p>Reinforcement Learning agent (Q-Learning) that adapts strategy to beat humans.</p>
-                    <div class="tech-mini">Python &bull; RL &bull; Algorithms</div>
-                </div>
-
-                 <div class="bento-item" data-aos="fade-up" data-delay="500">
-                    <div class="icon-box"><i class="fas fa-certificate"></i></div>
-                    <h3>Certifications</h3>
-                    <p>Govt. Training in Django (Excellent Score) & Google Digital Marketing.</p>
+                <div class="timeline-row" data-aos="fade-up">
+                    <div class="timeline-time">2022 - Present</div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <h3>B.Sc. in Computer Science</h3>
+                            <span class="company">Green University of Bangladesh</span>
+                        </div>
+                        <p class="role-desc">Final Year Student | Faculty of Science & Engineering</p>
+                        <ul class="job-details">
+                            <li><i class="fas fa-check"></i> <strong>Thesis Supervisor:</strong> Prof. Dr. Md. Saiful Azad (Dean, FSE).</li>
+                            <li><i class="fas fa-check"></i> <strong>Focus Areas:</strong> Data Mining, Machine Learning, Network Security.</li>
+                            <li><i class="fas fa-check"></i> <strong>Key Coursework:</strong> Artificial Intelligence, Cryptography, System Operations.</li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section id="skills" class="section-padding bg-darker">
+    <section id="research" class="section-padding bg-darker">
         <div class="container">
-            <h3 class="text-center mb-4">Technical Arsenal</h3>
-            <div class="skills-scroller">
-                <div class="skill-pill">Unity & AR/VR</div>
-                <div class="skill-pill">Python & PyTorch</div>
-                <div class="skill-pill">Computer Vision</div>
-                <div class="skill-pill">Java & OOP</div>
-                <div class="skill-pill">Kali Linux</div>
-                <div class="skill-pill">Android Debugging</div>
-                <div class="skill-pill">SQL & Database</div>
-                <div class="skill-pill">AES Encryption</div>
-                <div class="skill-pill">Django</div>
-                <div class="skill-pill">Git & GitHub</div>
+            <h2 class="section-heading" data-aos="fade-up">Research Lab</h2>
+            <p class="section-sub">Ongoing and published work in Artificial Intelligence.</p>
+
+            <div class="research-grid">
+                
+                <div class="research-card featured" data-aos="fade-up">
+                    <div class="card-badge">Ongoing Research • 99% Accuracy</div>
+                    <h3>Explainable ASD Prediction Framework</h3>
+                    <p class="res-desc">
+                        Developing a robust early detection system for Autism Spectrum Disorder (ASD) covering Children, Adolescents, and Adults. The model utilizes a balanced dataset to eliminate bias.
+                    </p>
+                    <div class="res-details">
+                        <div class="detail-col">
+                            <h4><i class="fas fa-cogs"></i> Methodology</h4>
+                            <ul>
+                                <li>Ensemble Learning (SVM, RF, XGBoost, ANN)</li>
+                                <li>Explainable AI (XAI) using SHAP & LIME</li>
+                                <li>Feature Importance Analysis</li>
+                            </ul>
+                        </div>
+                        <div class="detail-col">
+                            <h4><i class="fas fa-chart-line"></i> Impact</h4>
+                            <ul>
+                                <li>Early diagnostic support tool</li>
+                                <li>Transparent decision making for clinicians</li>
+                                <li>Cross-demographic generalization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-card" data-aos="fade-up" data-delay="100">
+                    <div class="card-badge">Undergraduate Thesis</div>
+                    <h3>Analyzing Fake News Spreads using Machine Learning</h3>
+                    <p class="res-desc">
+                        A multimodal framework analyzing misinformation spread across diverse contexts. Integrates textual and visual data to determine veracity with ~95% accuracy.
+                    </p>
+                    <div class="tech-tags">
+                        <span>Python</span><span>PyTorch</span><span>DistilBERT (NLP)</span><span>DINO-VIT (Vision)</span><span>Graph ML</span>
+                    </div>
+                    <p class="supervisor">Supervisor: Prof. Dr. Md. Saiful Azad</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="xr" class="section-padding">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">Immersive Technologies (XR)</h2>
+            
+            <div class="xr-container">
+                
+                <div class="xr-card vr-style" data-aos="fade-right">
+                    <div class="xr-content">
+                        <div class="xr-icon"><i class="fas fa-vr-cardboard"></i></div>
+                        <h3>VR Environment Simulation</h3>
+                        <p>Developed during my internship at Batterylow Interactive. A fully immersive simulation focused on spatial awareness and user interaction fidelity.</p>
+                        <ul>
+                            <li>Implemented 6DOF movement logic.</li>
+                            <li>Designed spatial audio systems for realism.</li>
+                            <li>Optimized low-poly assets for mobile VR performance.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Unity XR</span><span>Oculus SDK</span><span>Blender</span>
+                        </div>
+                    </div>
+                    <div class="xr-visual">
+                        <div class="visual-placeholder">VR Preview</div>
+                    </div>
+                </div>
+
+                <div class="xr-card ar-style" data-aos="fade-left">
+                    <div class="xr-content">
+                        <div class="xr-icon"><i class="fas fa-cube"></i></div>
+                        <h3>AR Alphabet Learning</h3>
+                        <p>An educational Augmented Reality application designed to make learning interactive for children. Scanning cards spawns animated 3D models.</p>
+                        <ul>
+                            <li>Marker-based tracking using Vuforia Engine.</li>
+                            <li>Interactive 3D animations (e.g., 'A' for Apple).</li>
+                            <li>Real-time shadow generation and physics.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Unity 3D</span><span>Vuforia</span><span>C# Scripting</span>
+                        </div>
+                    </div>
+                    <div class="xr-visual">
+                         <div class="visual-placeholder">AR Preview</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="engineering" class="section-padding bg-darker">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">System Engineering</h2>
+            
+            <div class="project-grid">
+                
+                <div class="p-card" data-aos="fade-up">
+                    <div class="p-icon"><i class="fas fa-notes-medical"></i></div>
+                    <h3>Medilink System</h3>
+                    <p>A comprehensive digital health platform managing doctor appointments, e-prescriptions, and medicine delivery logistics.</p>
+                    <ul class="p-list">
+                        <li>Complex Database Design (MySQL)</li>
+                        <li>User Role Management (Doctor/Patient/Admin)</li>
+                        <li>Automated Order Processing</li>
+                    </ul>
+                </div>
+
+                <div class="p-card" data-aos="fade-up" data-delay="100">
+                    <div class="p-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Secure Cloud Storage</h3>
+                    <p>A custom-built file transfer protocol focusing on data security and integrity.</p>
+                    <ul class="p-list">
+                        <li>AES-128 Bit Encryption</li>
+                        <li>Java Socket Programming</li>
+                        <li>Client-Server Architecture</li>
+                    </ul>
+                </div>
+
+                <div class="p-card" data-aos="fade-up" data-delay="200">
+                    <div class="p-icon"><i class="fab fa-android"></i></div>
+                    <h3>System Operations & Android</h3>
+                    <p>Hands-on experience with low-level debugging and operating system configuration.</p>
+                    <ul class="p-list">
+                        <li>Unbricking MediaTek (MTK) Devices</li>
+                        <li>SP Flash Tool & Firmware Flashing</li>
+                        <li>Kali Linux Virtualization & Net-Sec</li>
+                    </ul>
+                </div>
+
+                <div class="p-card" data-aos="fade-up" data-delay="300">
+                    <div class="p-icon"><i class="fas fa-chess"></i></div>
+                    <h3>Nim Game AI Agent</h3>
+                    <p>A Reinforcement Learning project exploring strategic decision making.</p>
+                    <ul class="p-list">
+                        <li>Q-Learning Algorithm Implementation</li>
+                        <li>Adaptive Difficulty Levels</li>
+                        <li>State-Action Reward Optimization</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </section>
 
     <section id="contact" class="section-padding">
-        <div class="container">
-            <div class="glass-form" data-aos="zoom-in">
-                <h2>Let's Collaborate</h2>
-                <p>Ready to join your team as an AI Engineer or XR Developer.</p>
-                <div class="contact-methods">
-                    <a href="mailto:realjibonll@gmail.com" class="contact-box">
-                        <i class="fas fa-envelope"></i>
-                        <span>realjibonll@gmail.com</span>
+        <div class="container contact-wrapper">
+            <div class="contact-box" data-aos="zoom-in">
+                <h2>Ready to Innovate?</h2>
+                <p>I am available for opportunities in <strong>AI Research</strong> and <strong>XR Development</strong>.</p>
+                
+                <div class="contact-info">
+                    <a href="mailto:realjibonll@gmail.com" class="c-item">
+                        <i class="fas fa-envelope"></i> realjibonll@gmail.com
                     </a>
-                    <a href="tel:+8801872124017" class="contact-box">
-                        <i class="fas fa-phone"></i>
-                        <span>+880 187 212 4017</span>
+                    <a href="tel:+8801872124017" class="c-item">
+                        <i class="fas fa-phone"></i> +880 187 212 4017
                     </a>
-                    <a href="#" class="contact-box">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Kuril-DCC, Dhaka</span>
-                    </a>
+                    <span class="c-item">
+                        <i class="fas fa-map-marker-alt"></i> Kuril-DCC, Dhaka
+                    </span>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Kamrul Hassan. <br>Built with Cyber-Glass UI.</p>
+        <p>&copy; 2025 Kamrul Hassan. Engineered with Precision.</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
